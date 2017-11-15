@@ -1,0 +1,269 @@
+/* main css----------------------------------------------------------------- */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body {
+  font-family: 'Anton', sans-serif;
+  background: url(background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+}
+
+/* header------------------------------------------------------------------- */
+
+h2 {
+  margin-top: 40px;
+  text-align: center;
+  color: black;
+  font-size: 35px;
+  text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
+  border-radius: 5px;
+}
+
+/* class-------------------------------------------------------------------- */
+
+.navbar {
+  width: 100%;
+  height: 61px;
+  background-color: #696969;
+  position: fixed;
+  top: 0;
+  z-index: 1100;
+}
+
+.navbar ul {
+  list-style: none;
+  float: right;
+}
+
+.navbar ul li{
+  display: inline;
+  line-height: 62px;
+  padding: 10px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+  text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  background-color: #808080;
+}
+
+.navbar h1{
+  float: left;
+  padding-left: 2%;
+  margin-top: -16px;
+  font-size: 58px;
+  text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
+}
+
+.content {
+  width: 100%;
+  height: 1000px;
+}
+
+.contactbar {
+  width: 100%;
+  height: 61px;
+  background-color: #696969;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
+}
+
+.welcometext {
+  float: right;
+  margin-top: 150px;
+  margin-right: 42%;
+  font-size: 30px;
+  background-color: rgb(111, 111, 111);
+  padding: 10px;
+  border-radius: 5px;
+  text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
+}
+
+.welcometext h2 {
+  margin-top: 5px;
+  color: rgb(40, 65, 130);
+}
+
+.aboutme {
+  float: right;
+  margin-top: 40px;
+  margin-right: 15%;
+  font-size: 30px;
+  background-color: rgb(111, 111, 111);
+  padding: 10px;
+  border-radius: 5px;
+  text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
+}
+
+.aboutme h2 {
+  margin-top: 5px;
+  color: rgb(40, 65, 130);
+}
+
+.contact {
+  float: left;
+  margin-left: 30%;
+  margin-top: 40px;
+  font-size: 30px;
+  background: rgb(111, 111, 111);
+  padding: 10px;
+  border-radius: 5px;
+  text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
+}
+
+.contact h2 {
+    margin-top: 5px;
+    color: rgb(40, 65, 130);
+  }
+
+.loginbar {
+  width: 250px;
+  height: 103%;
+  margin-left: auto;
+  margin-top: 61px;
+  background-color: #696969;
+  position: fixed;
+  opacity: 0.6;
+  z-index: 1000;
+  transition: all ease-in-out 300ms;
+  -webkit-transition: all ease-in-out 300 ms;
+
+}
+
+.loginbar2 {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.loginbar2 input {
+  font-family: 'Anton', sans-serif;
+  height: 30px;
+  width: 165px;
+  padding: 3px;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  border: none;
+}
+
+.loginbar2 button {
+  margin-top: 5px;
+  width: 171px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  border: none;
+  background-color: rgb(40, 65, 130);
+  text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
+}
+
+.loginbar2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+::-webkit-input-placeholder {
+  color: black;
+}
+
+.uploadbutton button {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5px;
+  width: 171px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  border: none;
+  background-color: rgb(40, 65, 130);
+  text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
+}
+
+.mydocuments {
+  float: right;
+  height: 85%;
+  width: 515px;
+  margin-top: 5%;
+  margin-right: 2%;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #696969;
+  text-align: left;
+}
+
+.mydocuments h2 {
+  margin: 5px;
+}
+
+.myvideos {
+  float: right;
+  height: 85%;
+  width: 515px;
+  margin-top: 5%;
+  margin-right: 2%;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #696969;
+  text-align: left;
+}
+
+.myvideos h2 {
+  margin: 5px;
+}
+
+.myimages {
+  float: right;
+  height: 85%;
+  width: 515px;
+  margin-top: 5%;
+  margin-right: 2%;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #696969;
+  text-align: left;
+}
+
+.myimages  h2 {
+  margin: 5px;
+}
+/* id----------------------------------------------------------------------- */
+
+#toggleMenu {
+  width: 25px;
+  height: 25px;
+  margin-top: 61px;
+  background-color: #696969;;
+  background-image: url(close.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: 1050;
+  cursor: pointer;
+  border: 10px solid #696969;
+  border-bottom-right-radius: 5px;
+  transition: all ease-in-out 300ms;
+  -webkit-transition: all ease-in-out 300ms;
+}
+
+#toggleMenu:hover {
+  opacity: 0.7;
+}
