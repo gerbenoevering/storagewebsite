@@ -177,6 +177,24 @@ h2 {
   text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
 }
 
+.logoutbutton {
+  text-decoration: none;
+  float: right;
+  color: red;
+  font-size: 40px;
+  margin-left: 30px;
+  margin-top: -9px;
+  padding: 10px;
+  border-radius: 5px;
+  text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
+}
+
+.logoutbutton a {
+  text-decoration: none;
+  color: rgb(40, 65, 130);
+  border-radius: 5px;
+}
+
 .deletebutton input {
   width: 100%;
 }
@@ -328,7 +346,6 @@ h2 {
   border: none;
   background-color: rgb(40, 65, 130);
   text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
-
 }
 
 .register1 a {

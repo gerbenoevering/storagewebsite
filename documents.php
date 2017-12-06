@@ -1,3 +1,12 @@
+<?php
+session_start();
+if(isset($_SESSION['userlogin'])) {
+  if($_SESSION['userlogin'] == false) {
+    header("Location: /index.php");
+    exit();
+  }
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,11 +20,14 @@
       <div class="container">
         <nav class="navbar">
           <h1>Personal Storage</h1>
+          <div class="logoutbutton">
+              <a class="logoutbutton1" href="http://gerbenoevering.duckdns.org/storagewebsite/logout.php">logout</a>
+          </div>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="homepage.php">Home</a></li>
             <li><a href="#">Documents</a></li>
-            <li><a href="videos.html">Videos</a></li>
-            <li><a href="images.html">Images</a></li>
+            <li><a href="videos.php">Videos</a></li>
+            <li><a href="images.php">Images</a></li>
           </ul>
         </nav>
       </div>

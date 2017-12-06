@@ -1,3 +1,12 @@
+<?php
+session_start();
+if(isset($_SESSION['userlogin'])) {
+  if($_SESSION['userlogin'] == false) {
+    header("Location: /index.php");
+    exit();
+  }
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,27 +20,22 @@
       <div class="container">
         <nav class="navbar">
           <h1>Personal Storage</h1>
+          <div class="logoutbutton">
+              <a class="logoutbutton1" href="http://gerbenoevering.duckdns.org/storagewebsite/logout.php">logout</a>
+          </div>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="documents.html">Documents</a></li>
-            <li><a href="videos.html">Videos</a></li>
-            <li><a href="images.html">Images</a></li>
+            <li><a href="homepage.php">Home</a></li>
+            <li><a href="documents.php">Documents</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="images.php">Images</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <div class="content">
-      <div class="welcometext">
-        <h2>Hi there!</h2>
-        <p>Welcome to your personal storage website<br />Login or Register up to get started</p>
-      </div>
-      <div class="aboutme">
-        <h2>About me:</h2>
-        <p>My name is Gerben Oevering, 16 years old <br />I study software development at the Friese Poort<br/>In my spare time i am doing lots of programming</p>
-      </div>
-      <div class="contact">
-        <h2>Contact:</h2>
-        <p>Email: gerbenoevering@gmail.com<br />Phone number: +31 6 11223344</p>
+      <div class="myvideos">
+        <h2>Videos</h2>
+        <p>this is an example of a video</p>
       </div>
       <div id="toggleMenu" onclick="toggleMenu()"></div>
       <div class="loginbar" id="menu">
@@ -48,7 +52,7 @@
       </div>
     </div>
     <footer>
-      <div class="footer1">
+      <div class="contactbar">
         <p>© Gerben Oevering 2017</p>
       </div>
     </footer>
